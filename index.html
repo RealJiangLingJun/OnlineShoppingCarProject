@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+    <title>JDShoppingCar</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body class="">
+
+    <div class="container">
+        <div class="row nav">
+                <div class="col-md-2 jdHome"><img src="./image/jdHome.png" alt="">京东首页</div>
+                <div class="col-md-1 location"><img src="./image/locationLogo.png" alt="">浙江</div>
+                <div class="col-md-1 user"><a href="#">UserAdmin</a></div>
+                <div class="col-md-1 "><span>|</span> 我的订单</div>
+                <div class="col-md-1 "><span>|</span> 我的京东</div>
+                <div class="col-md-1 "><span>|</span> 京东会员</div>
+                <div class="col-md-1 "><span>|</span> 企业采购</div>
+                <div class="col-md-1 "><span>|</span> 客户服务</div>
+                <div class="col-md-1 "><span>|</span> 网站导航</div>
+                <div class="col-md-1 "><span>|</span> 手机京东</div>
+
+        </div>
+
+        <div class="row log_search">
+            <div class="col-md-6 jdlogo"><img src="./image/jdlogo.png" alt=""></div>
+            <div class="col-md-6 searchForm">
+                <div class="form">
+                    <input type="text" class="itxt" autocomplete="off" accesskey="s">
+                    <input type="submit" class="searchButton" value="搜 索 ">
+                </div>
+            </div>
+        </div>
+
+        <div class="row overGoods">
+            <div class="col-md-3 allGoods">全部商品: <span>0</span></div>
+            <div class="col-md-9 address"><span class="span1">配送至：</span>
+                <span class="span2"><span class="span3">浙江省杭州市江干区</span></span>
+            </div>
+        </div>
+
+        <div class="row titalBar">
+            <div class="col-md-1 selectAll">
+                <div>
+                    <input type="checkbox" class="allcheckbox">
+                    <span>&nbsp;全选</span>
+                </div>
+            </div>
+            <div class="col-md-3 goods">商品</div>
+            <div class="col-md-2 unitPrice">单价</div>
+            <div class="col-md-2 quantity">数量</div>
+            <div class="col-md-2 total">小计</div>
+            <div class="col-md-2 option">操作</div>
+        </div>
+
+        <div class="row items">
+            <div class="col-md-1 checkBox">
+                <input type="checkbox" class="itemscheckbox" ></div>
+            <div class="col-md-3 book">
+                <img src="./image/JavaScript_The_Definitive_Guide.png" alt="">
+                <span >《<span class="bookName">JavaScript_The_Definitive_Guide</span>》</span>
+            </div>
+            <div class="col-md-2 price">￥<span class="priceSpan">139.00</span></div>
+            <div class="col-md-2 quantityBox">
+                <div class="box">
+                    <a href="javascript:void(0);" class="minus">-</a>
+                    <input type="text" oninput="value=value.replace(/[^\d]/g,'')" value="1" class="numberInput"/>
+                    <a href="javascript:void(0);" class="plus">+</a>
+                </div>
+            </div>
+            <div class="col-md-2 totalPrice">￥<span class="finalPrice">00.00</span></div>
+            <div class="col-md-2 itemOption">
+                <a href="#" class="deleteLink">删除</a>
+            </div>
+        </div>
+
+        <div class="row items">
+            <div class="col-md-1 checkBox"><input type="checkbox" class="itemscheckbox"></div>
+            <div class="col-md-3 book">
+                <img src="./image/Thinking_in_Java.png" alt="">
+                <span>《<span class="bookName">Thinking_in_Java</span>》</span>
+            </div>
+            <div class="col-md-2 price">￥<span class="priceSpan">110.00</span></div>
+            <div class="col-md-2 quantityBox">
+                <div class="box">
+                    <a href="javascript:void(0);" class="minus">-</a>
+                    <input type="text" oninput="value=value.replace(/[^\d]/g,'')" value="1" class="numberInput"/>
+                    <a href="javascript:void(0);" class="plus">+</a>
+                </div>
+            </div>
+            <div class="col-md-2 totalPrice">￥<span class="finalPrice">999.00</span></div>
+            <div class="col-md-2 itemOption">
+                <a href="#" class="deleteLink">删除</a>
+            </div>
+        </div>
+
+        <div class="row items">
+            <div class="col-md-1 checkBox"><input type="checkbox" class="itemscheckbox"></div>
+            <div class="col-md-3 book">
+                <img src="./image/挪威的森林.jpg" alt="">
+                <span>《<span class="bookName">挪威的森林</span>》</span>
+            </div>
+            <div class="col-md-2 price">￥<span class="priceSpan">19.90</span></div>
+            <div class="col-md-2 quantityBox">
+                <div class="box">
+                    <a href="javascript:void(0);" class="minus">-</a>
+                    <input type="text" oninput="value=value.replace(/[^\d]/g,'')" value="1" class="numberInput"/>
+                    <a href="javascript:void(0);" class="plus">+</a>
+                </div>
+            </div>
+            <div class="col-md-2 totalPrice">￥<span class="finalPrice">00.00</span></div>
+            <div class="col-md-2 itemOption">
+                <a href="javascript:void(0);" class="deleteLink">删除</a>
+            </div>
+        </div>
+
+
+
+        <div class="row bottomBar" >
+            <div class="col-md-1 selectAll">
+                <div>
+                    <input type="checkbox" class="allcheckbox">
+                    <span>&nbsp;全选</span>
+                </div>
+            </div>
+            <div class="col-md-4 options">
+                <span class="deleteSelected">删除选中商品</span> 
+                <span class="guanzhu">移入关注</span>
+                <span class="clearCar">清理购物车</span>
+            </div>
+            <div class="col-md-7 finalDetial">
+                <div class="infoBox">
+                    <span class="selected">已选择&nbsp;<span class="selectedNum">0</span>&nbsp;件商品</span>
+                    <span>|</span>
+                    <span class="totalPrice">总价：<span></span></span>
+                    ￥<em class="finalTotalPrice">00.00</em>
+                    <img src="./image/tips.png" alt="">
+                    <!-- <span class="settlement"> -->
+                        <a class="settlement" href="javascript:void(0);">去结算<b></b>
+                        </a>
+                    <!-- </span> -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <!-- //todo:有待完善的地方（对比京东购物车）
+        //1. 在汇总行中添加：“已选择几件商品”，累加各商品的数量
+        //2. 添加“全选”功能：
+        //(1)选中表头的“全选”复选框，则选中所有商品行的复选框
+        //(2)取消选中某个商品行的复选框，则取消选中表头的“全选”复选框
+        //(3)选中某个商品行的复选框，如果此时所有商品行的复选框都被选中，则选中表头的“全选”复选框
+        //(4)只对选中的商品行计算总计，未选中的商品行不计入总计
+        //3. 选中商品行的复选框，该行的背景颜色变成 棕黄色 ；取消选中商品行的复选框，则去掉该行的 棕黄色背景颜色
+        //4. 点击数量的“+”、“-”时，数字变化的滚动  动画 -->
+
+
+    
+</body>
+
+<script src="./js/jquery-1.11.1.min.js"></script>
+
+<script src="./js/index.js"></script>
+
+<!-- <script src="./bootstrap/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        // 页面初始化时，对-，+ 添加事件
+        //对每个商品行计算小计、设置“-”的状态
+        $(".items").each(function() {
+            // 计算小计
+            calculateSubTotal($(this));
+            setMinusLinkState($(this));
+        });
+
+        // 计算商品价值总计
+        calculateTotal();
+
+        // 重新计算的商品数量
+        calculateTotalGoods();
+
+        // 重新计算选中的商品数量
+        calculateSelectedNum();
+
+
+        //“+”鼠标单击事件
+        $(".plus").click(function() {
+            //找到“数量”文本框
+            var numberInput = $(this).prev();
+            //文本框的数值加1
+            var numberStr = numberInput.val();
+            var number = parseInt(numberStr);
+
+            if (number >= 100){
+                alert("宝贝的购买数量不允许超过100");
+            }else{
+                numberInput.val(number + 1);
+                
+                //找到当前商品所在的数据行
+                //closest()：离当前元素最近的祖先元素
+                var row = $(this).closest(".items");
+
+                //计算小计
+                calculateSubTotal(row);
+                //计算总计
+                calculateTotal();
+                //设置“-”的状态
+                setMinusLinkState(row);
+            }
+
+            // 计算商品价值总计
+            calculateTotal();
+        });
+
+
+        //“-”鼠标单击事件
+        $(".minus").click(function() {
+            //找到“数量”文本框
+            var numberInput = $(this).next();
+            //文本框的数值减1
+            var numberStr = numberInput.val();
+            var number = parseInt(numberStr);
+
+            //当“数量”文本框的数量>=2时，点击“-”进行减1
+            if(number >= 2) {
+                numberInput.val(number - 1);
+
+                var row = $(this).closest(".items");
+                calculateSubTotal(row);
+                calculateTotal();
+            }
+
+            // 这里在外面也还调的到 row 是因为作用域链，var的使用
+            setMinusLinkState(row);
+
+            // 计算商品价值总计
+            calculateTotal();
+        });
+
+
+        //检测“数量”文本框输入的有效性，必须是正整数
+        //blur：失去焦点事件
+        $(".numberInput").blur(function() {
+            //获取文本框的值
+            var numberStr = $(this).val();
+            //正则表达式：正整数
+            var pattern = /^[1-9]\d*$/;
+
+            var row = $(this).closest(".items");
+
+            if(pattern.test(numberStr) ) {
+
+                if (parseInt(numberStr) <= 100){
+                    calculateSubTotal(row);
+                    calculateTotal();
+                    setMinusLinkState(row);
+
+                    // 计算商品价值总计
+                    calculateTotal();
+                    // 重新计算选中的商品小计
+                    calculateSubTotal(row);
+                }else{
+                alert("单件商品购买数量不得超过100！");
+                var finalPrice = parseFloat(row.find(".finalPrice")[0].innerText);
+                var price = parseFloat(row.find(".priceSpan")[0].innerText);
+                $(this)[0].value = finalPrice / price;
+                }
+            }else {
+                alert("输入错误，请输入正整数！");
+                var finalPrice = parseFloat(row.find(".finalPrice")[0].innerText);
+                var price = parseFloat(row.find(".priceSpan")[0].innerText);
+                $(this)[0].value = finalPrice / price;
+            }
+
+            
+        });
+
+
+        //删除一行商品
+        $(".deleteLink").click(function() {
+            //删除确认对话框
+            var ok = confirm("确定要删除该宝贝吗？")
+            
+            if(ok) {
+                //"删除"链接所在的商品行
+                var row = $(this).closest(".items");
+                //删除当前这行商品
+                row.remove();
+            }
+            // 重新计算选中的商品数量
+            calculateTotalGoods();
+            // 计算商品价值总计
+            calculateTotal();
+        });
+
+
+        // 给单选框添加事件
+        $(".itemscheckbox").click(function() {
+            var items = $(this).closest(".items");
+            if(this.checked){
+                items.addClass("checked");
+            }else {
+                items.removeClass("checked");
+            }
+
+            // 重新计算选中的商品数量
+            calculateSelectedNum();
+            // 判断是否全选了
+            judueSelected();
+            // 计算商品价值总计
+            calculateTotal();
+        });
+
+
+        // 为全选框添加事件
+        $(".allcheckbox").click(function() {
+            // 全选按钮列表
+            var allcheckboxList = $(".allcheckbox");
+            // 商品列表
+            var itemsList = $(".items");
+            // 单选按钮列表
+            var checkboxList = $(".itemscheckbox");
+
+            //判断全选按钮的选中状态
+            var state = $(this).prop("checked");
+
+            checkboxList.each(function() {
+                $(this).prop("checked",state);
+            });
+            allcheckboxList.each(function() {
+                $(this).prop('checked',state);
+            });
+
+            if(this.checked){
+                itemsList.each(function() {
+                    $(this).addClass("checked");
+                });
+            }else {
+                itemsList.each(function() {
+                    $(this).removeClass("checked");
+                });
+            }
+
+            // 重新计算选中的商品数量
+            calculateSelectedNum();
+            // 计算商品价值总计
+            calculateTotal();
+        });
+
+        // 移除选中的商品
+        $(".deleteSelected").click(function(){
+            var selectedNum = $(".checked").length;
+            if(selectedNum == 0){
+                alert("没有选择任何商品！");
+            }else{
+                //删除确认对话框
+                var ok = confirm("确定要删除选中的商品吗？")
+                if(ok) {
+                    // 删除选中商品
+                    deleteSelected();
+                }
+                // 重新计算选中的商品数量
+                calculateSelectedNum();
+                // 判断是否全选了
+                judueSelected();
+                // 重新计算的商品数量
+                calculateTotalGoods();
+                // 计算商品价值总计
+                calculateTotal();
+            }
+        });
+
+
+        // 搜索框
+        $(".searchButton").click(function(){
+            // 搜索商品,根据商品名字搜索
+            search();
+            // 重新计算选中的商品数量
+            calculateSelectedNum();
+            // 判断是否全选了
+            judueSelected();
+            // 重新计算的商品数量
+            calculateTotalGoods();
+            // 计算商品价值总计
+            calculateTotal();
+        });
+
+
+        // 结算 -settlement
+        $(".settlement").click(function(){
+            var finalTotalPrice = parseFloat($(".finalTotalPrice")[0].innerText);
+            if (finalTotalPrice > 0){
+                alert("当前您共消费"+finalTotalPrice+"元，请自行支付！");
+            }else{
+                alert("您还未选择任何商品！");
+            }
+        });
+
+
+    });
+
+</script>
+
+</html>

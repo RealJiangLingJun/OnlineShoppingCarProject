@@ -1,0 +1,375 @@
+body{
+    font: 12px/150% tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;;
+}
+
+.nav{
+    background-color: #e3e4e5;
+    height: 30px;
+    font-size:12px ;
+    color: #999;
+    /* padding-bottom: 3rem; */
+}
+
+
+.container>.nav>div{
+    cursor: pointer;
+}
+
+.container>.nav>div:hover{
+    color: #E2231A;
+}
+.container>.nav>div:active{
+    color: #E2231A;
+}
+
+.nav div{
+    text-align: center;
+    line-height: 30px;
+}
+
+.nav>.user>a{
+    text-decoration: none;
+    color: #e2231a;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav .location{
+    text-align: left;
+}
+.nav .jdHome{
+    text-align: right;
+}
+
+
+.log_search{
+    /* background-color: aquamarine; */
+    height: 100px;
+    color: #434343;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.log_search .jdlogo{
+    line-height: 80px;
+}
+
+.log_search .searchForm {
+    height: 80px;
+    padding: 25px 0px ;
+    /* padding-bottom: 25px ; */
+
+}
+
+.log_search .searchForm .form{
+    /* margin-top: 30px ; */
+    background-color: #c91623;
+    float: right;
+    border: 2px solid #c91623;
+
+    height: 30px;
+}
+
+.log_search .searchForm .form .itxt{
+    border: 0;
+    height: 26px;
+    line-height: 18px;
+    width: 280px;
+    /* padding: 3px 5px; */
+    /* padding: 20px 5px 2px; */
+    outline: none;
+}
+
+.log_search .searchForm .form .searchButton{
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 14px;
+    width: 48px;
+    height: 24px;
+    background: #c91623;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border:0;/*去掉未选中边框*/
+    outline:none;/*去掉选中边框*/
+}
+
+
+.overGoods{
+    /* background-color: aquamarine; */
+    height: 60px;
+    margin: 10px 0px 0px;
+    /* text-align: center; */
+
+}
+.overGoods .allGoods{
+    color: #E2231A;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    /* float: left; */
+}
+
+.overGoods .address{
+    text-align: right;
+    padding-left: 0px ;
+    line-height: 60px;
+}
+
+.overGoods .address .span2{
+    border: 1px solid #CECBCE;
+}
+.overGoods .address .span3{
+    margin:2px ;
+}
+
+.titalBar{
+    height: 50px;
+    background-color: #F3F3F3;
+    /* margin: 0px 0px 10px; */
+    padding: 5px 0px;
+    border:  1px solid rgb(233, 233, 233) ;
+    border-top :0px ;
+}
+
+.titalBar>[class*=col-md-]{
+    line-height: 40px;
+}
+
+.titalBar .selectAll{
+    line-height: 40px;
+    width: 8rem;
+}
+
+.titalBar .goods{
+    width: 36rem;
+}
+.titalBar .unitPrice{
+    width: 12rem;
+}
+.titalBar .quantity{
+    width: 20rem;
+}
+.titalBar .total{
+    width: 10rem;
+}
+.titalBar .option{
+    width: 10rem;
+}
+
+.titalBar .selectAll .allcheckbox{
+    margin: auto 0px;
+}
+
+.titalBar .goods,.quantity,.option,.unitPrice{
+    text-align: center;
+
+}
+
+.titalBar .total{
+    text-align: right;
+    
+}
+
+.items {
+    margin-top: 2rem;
+    border: 1px solid rgb(241, 241, 241);
+    border-top: 2px solid rgb(170,170,170);
+    height: 120px;
+    background-color: #FFF
+}
+
+.items>[class*=col-md-]{
+    /* line-height: 120px; */
+}
+
+.items>.checkBox{
+    width: 8rem;
+}
+
+.items>.book{
+    width: 36rem;
+    margin: 1rem 0px;
+}
+
+.items>.book>img{
+    /* border: 1px solid rgb(102, 102, 102); */
+    width: 80px;
+    height: 90px;
+}
+.items>.book>.bookName{
+    color: #333333;
+    text-align: center;
+}
+
+.items>.price{
+    width: 12rem;
+    color: #333333;
+    line-height: 120px;
+    text-align: center;
+}
+
+.items>.quantityBox{
+    width: 20rem;
+    line-height: 120px;
+}
+
+.items>.quantityBox>.box{
+    /* border: 1px solid rgb(241, 241, 241); */
+    width: 18rem;
+    /* line-height: 3rem; */
+    margin: auto auto;
+    text-align: center;
+}
+.items>.quantityBox>.box>input{
+    height: 2rem;
+    width: 6rem;
+    text-align: center;
+}
+
+.items>.totalPrice{
+    width: 10rem;
+    margin: auto auto;
+    line-height: 120px;
+    text-align: right;
+}
+
+.items>.itemOption{
+    width: 10rem;
+    line-height: 120px;
+    margin: auto auto;
+    text-align: center;
+}
+
+
+.bottomBar{
+    margin-top: 2rem;
+    height: 60px;
+    border: 1px solid rgb(241, 241, 241);
+}
+
+
+.bottomBar>[class*=col-md-]{
+    line-height: 60px;
+}
+
+.bottomBar .selectAll{
+    line-height: 60px;
+    width: 8rem;
+}
+
+.bottomBar .selectAll .allcheckbox{
+    margin: auto 0px;
+}
+
+.bottomBar>.options{
+    /* padding: auto 2px; */
+    /* width: 26rem; */
+    color: #666;
+    cursor:pointer ;
+    
+}
+.bottomBar>.options>span:hover{
+    color: #E2231A;
+}
+.bottomBar>.options>span:active{
+    color: #E2231A;
+}
+
+.bottomBar>.options>span{
+    padding: 0px 10px;
+}
+
+.bottomBar>.finalDetial>.infoBox{
+    float: right;
+    color: #999;
+}
+
+.bottomBar>.finalDetial>.infoBox .selectedNum{
+    /* float: right; */
+    color: #E2231A;
+    font-family: verdana;
+    font-weight: 700;
+
+}
+
+.bottomBar>.finalDetial>.infoBox .finalTotalPrice{
+    /* float: right; */
+    color: #E2231A;
+    font-size: 16px;
+    font-family: verdana;
+    font-weight: 700;
+}
+
+.bottomBar>.finalDetial>.infoBox img{
+    width: 12px;
+    height: 18px;
+}
+
+.bottomBar>.finalDetial>.infoBox>.selected{
+    margin-right: 1rem;
+}
+
+.bottomBar>.finalDetial>.infoBox>.totalPrice{
+    margin-left: 1rem;
+}
+
+.bottomBar>.finalDetial>.infoBox>a{
+    margin-left: 1rem;
+    background-color: #E2231A;
+    font-size: 18px;
+    /* height:  60px; */
+    padding: 20px;
+    width: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* 操作删除按钮 样式*/
+.container>.items>.itemOption>.deleteLink{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666666;
+}
+.container>.items>.itemOption>.deleteLink:hover{
+    color: #E2231A;
+}
+
+
+/* -，+ 样式 */
+.plus,.minus{
+    font-size: 20px;
+    font-weight: 700;
+    color: #f40;
+}
+.minus:hover{
+    color: rgb(23, 252, 233);
+}
+.plus:hover{
+    color: rgb(23, 252, 233);
+}
+
+
+/* 
+    禁用链接a（点击链接无反应）
+    IE8不支持
+*/
+.disableLink {
+    pointer-events:none;
+}
+
+/* 选中变色 */
+.checked{
+    background-color: bisque;
+}
+
+
+/* 隐藏筛选后的商品 */
+.hidden{
+    display: none;
+}
