@@ -86,20 +86,20 @@ function deleteSelected(){
 function search(){
     // 获取输入的信息
     var info = $(".itxt").val();
+    // console.log(info);
     if(info == undefined || info.length == 0){
-        alert("请输入搜索信息！");
-        return
+        // alert("请输入搜索信息！");
+        return;
     }
     var itemsList = $(".items");
     itemsList.each(function() {
         let bookname = $(this).find(".bookName")[0].innerText;
-        console.log(bookname);
-        if(bookname.indexOf(info) > -1){
+        // console.log(bookname);
+        if(bookname.indexOf(info) == -1){
             $(this).addClass("hidden")
             $(this).removeClass("checked");
             // $(this).removeClass("items");
-
-            console.log(info);
+            // console.log(bookname +"1");
         }else{
             $(this).addClass("items")
             $(this).removeClass("hidden");
